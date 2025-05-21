@@ -6,6 +6,7 @@
   <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
   <link rel="stylesheet" href="/css/style.css">
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
   <header class="site-header">
@@ -31,8 +32,23 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; {% year %} {{ site.author }}. All rights reserved.</p>
+      <p>&copy; {% year %} Granth Agarwal. All Rights Reserved.</p>
+      <div class="social-links" style="margin-top: 1rem;">
+        <a href="https://github.com/hey-granth" target="_blank" aria-label="GitHub" style="margin-right: 1rem;">
+          <i data-feather="github"></i>
+        </a>
+        <a href="https://linkedin.com/in/granth-agarwal" target="_blank" aria-label="LinkedIn" style="margin-right: 1rem;">
+          <i data-feather="linkedin"></i>
+        </a>
+        <a href="https://x.com/heygranth" target="_blank" aria-label="Twitter">
+          <i data-feather="twitter"></i>
+        </a>
+      </div>
     </div>
   </footer>
+
+  <script>
+    feather.replace();
+  </script>
 </body>
 </html>

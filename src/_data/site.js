@@ -7,8 +7,8 @@ module.exports = {
 
     // Author information
     author: {
-        name: "Your Name",
-        email: "your.email@example.com",
+        name: "Granth Agarwal",
+        email: "heygranth@gmail.com",
         bio: "A brief description about yourself"
     },
 
@@ -22,9 +22,9 @@ module.exports = {
 
     // Social media links
     social: {
-        github: "https://github.com/yourusername",
-        twitter: "https://twitter.com/yourusername",
-        linkedin: "https://linkedin.com/in/yourusername"
+        github: "https://github.com/hey-granth",
+        x: "https://x.com/heygranth",
+        linkedin: "https://linkedin.com/in/granth-agarwal"
     },
 
     // Site settings
