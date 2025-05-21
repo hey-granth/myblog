@@ -1,0 +1,33 @@
+---
+layout: base.njk
+title: Home
+---
+
+<section class="intro">
+  <h1>Welcome to my blog</h1>
+  <p>A place for thoughtful writing and ideas. This minimal, text-focused blog is designed for optimal readability and a pleasant reading experience.</p>
+</section>
+
+<section class="recent-posts">
+  <h2>Recent Posts</h2>
+
+  <ul class="post-list">
+    {%- for post in collections.posts | reverse -%}
+      {% if loop.index <= 5 %}
+        <li class="post-list-item">
+          <h3 class="post-list-title">
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+          </h3>
+          <div class="post-list-meta">
+            <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
+          </div>
+          {% if post.data.description %}
+            <p class="post-list-excerpt">{{ post.data.description }}</p>
+          {% endif %}
+        </li>
+      {% endif %}
+    {%- endfor -%}
+  </ul>
+
+  <p><a href="/posts/">View all posts &rarr;</a></p>
+</section>

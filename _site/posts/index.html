@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+  <title>Archive | My Blog</title>
+  <meta name="description" content="A minimal and professional blog with Georgia font">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
       <div class="site-title">
-        <a href="/">{{ site.title }}</a>
+        <a href="/">My Blog</a>
       </div>
       <nav class="site-nav">
         <ul>
@@ -25,13 +25,23 @@
 
   <main class="site-content">
     <div class="container">
-      {{ content | safe }}
+      
+<h1>All Posts</h1>
+
+<ul class="post-list"><li class="post-list-item">
+      <h3 class="post-list-title">
+        <a href="/posts/granth/"></a>
+      </h3>
+      <div class="post-list-meta">
+        <time datetime="2025-05-21T21:55:45.329+05:30">May 21, 2025</time>
+      </div>
+    </li></ul>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; {% year %} {{ site.author }}. All rights reserved.</p>
+      <p>&copy; 2025 [object Object]. All rights reserved.</p>
     </div>
   </footer>
 </body>
